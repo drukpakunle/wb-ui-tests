@@ -1,0 +1,16 @@
+{
+  "catalogItems": [
+    {
+      "vendor": "T.TACCARDI",
+      "vendorCode": "10685718",
+      "characteristicId": "34374306",
+      "productName": "Полуботинки",
+      "sizes": [
+        {
+          "sizeType": "rus",
+          "sizeValue": "42"
+        }
+      ]
+    }
+  ]
+}

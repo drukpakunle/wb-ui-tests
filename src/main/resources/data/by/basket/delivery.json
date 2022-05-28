@@ -1,0 +1,12 @@
+{
+  "deliveryItems": [
+    {
+      "deliveryType": "self",
+      "address": "г. Минск, Нёманская улица, д. 3"
+    },
+    {
+      "deliveryType": "courier",
+      "address": "Минск, Краснозвёздная улица, д. 3А, кв. 108"
+    }
+  ]
+}

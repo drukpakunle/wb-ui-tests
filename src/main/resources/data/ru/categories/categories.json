@@ -1,0 +1,27 @@
+{
+  "categories": [
+    {
+      "name": "Велосипеды",
+      "parent": "Велоспорт",
+      "tags": [
+        "Беговелы",
+        "Горные",
+        "Городские",
+        "Детские и подростковые",
+        "Складные",
+        "Женские",
+        "BMX",
+        "Фэтбайки"
+      ],
+      "namingLetters": "cyrillic",
+      "route": "/catalog/sport/vidy-sporta/velosport/velosipedy"
+    },
+    {
+      "name": "MP3 плееры",
+      "parent": "ТВ, Аудио, Фото, Видео техника",
+      "tags": null,
+      "namingLetters": "mixed",
+      "route": "/catalog/elektronika/audiotehnika/mp3-pleery/mp3-pleery"
+    }
+  ]
+}

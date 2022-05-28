@@ -1,0 +1,34 @@
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Mac
+.DS_Store
+_*MAC*
+
+# Maven
+log/
+target/
+
+# Common
+*.versionsBackup
+*.Backup
+*.orig
+local.*
+public/*
+
+# Allure
+.allure/
+allure-results/
+.public
+public
+
+# Mock Data
+report/history.json
+local/

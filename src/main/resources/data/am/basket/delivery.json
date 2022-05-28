@@ -1,0 +1,12 @@
+{
+  "deliveryItems": [
+    {
+      "deliveryType": "self",
+      "address": "г. Ереван, улица Туманяна, д. 10"
+    },
+    {
+      "deliveryType": "courier",
+      "address": "Ереван, улица Карапета Улнеци, д. 16, кв. 108"
+    }
+  ]
+}

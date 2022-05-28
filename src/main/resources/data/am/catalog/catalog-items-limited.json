@@ -1,0 +1,16 @@
+{
+  "catalogItems": [
+    {
+      "vendor": "Mascotte",
+      "vendorCode": "10759562",
+      "characteristicId": "34564830",
+      "productName": "Туфли",
+      "sizes": [
+        {
+          "sizeType": "rus",
+          "sizeValue": "44"
+        }
+      ]
+    }
+  ]
+}

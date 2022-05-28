@@ -1,0 +1,11 @@
+{
+  "searchPage": {
+    "notFoundText": "По Вашему запросу \"{searchText}\" ничего не найдено."
+  },
+  "basketPage": {
+    "noProductsSelectedInfo": "Выберите хотя бы один товар"
+  },
+  "checkoutPage": {
+    "free": "Бесплатно"
+  }
+}

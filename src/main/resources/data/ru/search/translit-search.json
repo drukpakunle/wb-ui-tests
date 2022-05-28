@@ -1,0 +1,12 @@
+{
+  "vendors": [
+    {
+      "namingLetters": "cyrillic",
+      "name" : "ОРТОДОН"
+    },
+    {
+      "namingLetters": "latin",
+      "name" : "Samsung"
+    }
+  ]
+}

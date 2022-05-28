@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite (all tests)">
+    <listeners>
+        <listener class-name="ru.wildberries.listeners.SuiteListener"/>
+        <listener class-name="ru.wildberries.listeners.BaseTestListener"/>
+    </listeners>
+
+    <test name="Общие Тесты">
+        <classes>
+            <class name="ru.wildberries.tests.common.MainMenuTest"/>
+        </classes>
+    </test>
+    <test name="Личный Кабинет">
+        <classes>
+            <class name="ru.wildberries.tests.account.AccountCommonTest"/>
+        </classes>
+    </test>
+    <test name="Корзина">
+        <classes>
+            <class name="ru.wildberries.tests.basket.AuthorizedUserBasketTest"/>
+            <class name="ru.wildberries.tests.basket.BasketToPonedTest"/>
+            <class name="ru.wildberries.tests.basket.CheckoutBasketTest"/>
+            <class name="ru.wildberries.tests.basket.UnauthorizedUserBasketTest"/>
+        </classes>
+    </test>
+    <test name="Каталог">
+        <classes>
+            <class name="ru.wildberries.tests.catalog.CommonCatalogTest"/>
+        </classes>
+    </test>
+    <test name="Главная Страница">
+        <classes>
+            <class name="ru.wildberries.tests.home.HomePageCommonTest"/>
+        </classes>
+    </test>
+    <test name="Отложенные">
+        <classes>
+            <class name="ru.wildberries.tests.poned.CommonPonedTest"/>
+            <class name="ru.wildberries.tests.poned.FiltersPonedPageTest"/>
+            <class name="ru.wildberries.tests.poned.MyGroupsPageTest"/>
+            <class name="ru.wildberries.tests.poned.PonedPageTest"/>
+            <class name="ru.wildberries.tests.poned.PonedToBasketTest"/>
+            <class name="ru.wildberries.tests.poned.ProductCardPageTest"/>
+        </classes>
+    </test>
+    <test name="Редиректы">
+        <classes>
+            <class name="ru.wildberries.tests.redirects.RedirectsWithAuthTest"/>
+            <class name="ru.wildberries.tests.redirects.RedirectsWithoutAuthTest"/>
+        </classes>
+    </test>
+    <test name="Поиск">
+        <classes>
+            <class name="ru.wildberries.tests.search.HomePageSearchTest"/>
+            <class name="ru.wildberries.tests.search.PonedPageSearchTest"/>
+            <class name="ru.wildberries.tests.search.SearchByCategoryTest"/>
+            <class name="ru.wildberries.tests.search.SearchByProductNameTest"/>
+            <class name="ru.wildberries.tests.search.SearchByVendorCodeTest"/>
+            <class name="ru.wildberries.tests.search.SearchWithSuggestTest"/>
+        </classes>
+    </test>
+    <test name="Лист Ожидания">
+        <classes>
+            <class name="ru.wildberries.tests.waitinglist.WaitingListPageTest"/>
+            <class name="ru.wildberries.tests.waitinglist.WaitingListToBasketTest"/>
+        </classes>
+    </test>
+</suite>

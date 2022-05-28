@@ -1,0 +1,142 @@
+image: maven:3.8.1-openjdk-11
+
+variables:
+  ENV_IP: "10.10.41.149"
+  ENV_OVERRIDE_HOST: "true"
+  RUN_SUITE: "smoke"
+  RUN_GROUPS: ""
+  RUN_THREAD_COUNT: 1
+  RUN_DEVICE: "Galaxy S5"
+  MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+  SELENIUM_REMOTE_URL: http://gitlab-selenium-server:4444/wd/hub
+  GITLAB_TARGET_SELENIUM_REMOTE_URL: http://selenium__standalone-chrome:4444/wd/hub
+  TELEGRAM_STATUS_MESSAGE: "null"
+
+stages:
+  - selenium-msite-test
+  - pages
+
+services:
+  - name: selenium/standalone-chrome
+    alias: gitlab-selenium-server
+
+cache:
+  paths:
+    - .m2
+    - target
+
+before_script:
+  - export DISPLAY=:0
+  - sleep 3
+  - apt-get update -y && apt-get upgrade -y
+  - apt-get install libnss3 -y
+
+ru-msite-test:
+  stage: selenium-msite-test
+  resource_group: ru-msite-test
+  variables:
+    ENV_LOCALE: "ru"
+    ENV_URL: https://www.wildberries.ru
+  tags:
+    - linux-docker-executor
+  only:
+    - master
+    - beta
+  script:
+    - scripts/override-hosts.sh
+    - scripts/version-waiter.sh
+    - scripts/maven-libraries-download.sh
+    - scripts/maven-testng-start.sh
+    - scripts/build-allure-report.sh
+
+by-msite-test:
+  stage: selenium-msite-test
+  resource_group: by-msite-test
+  variables:
+    ENV_LOCALE: "by"
+    ENV_URL: https://by.wildberries.ru
+  tags:
+    - linux-docker-executor
+  only:
+    - master
+    - beta
+  script:
+    - scripts/override-hosts.sh
+    - scripts/version-waiter.sh
+    - scripts/maven-libraries-download.sh
+    - scripts/maven-testng-start.sh
+    - scripts/build-allure-report.sh
+
+am-msite-test:
+  stage: selenium-msite-test
+  resource_group: am-msite-test
+  variables:
+    ENV_LOCALE: "am"
+    ENV_URL: https://am.wildberries.ru
+  tags:
+    - linux-docker-executor
+  only:
+    - master
+    - beta
+  script:
+    - scripts/override-hosts.sh
+    - scripts/version-waiter.sh
+    - scripts/maven-libraries-download.sh
+    - scripts/maven-testng-start.sh
+    - scripts/build-allure-report.sh
+
+kg-msite-test:
+  stage: selenium-msite-test
+  resource_group: kg-msite-test
+  variables:
+    ENV_LOCALE: "kg"
+    ENV_URL: https://kg.wildberries.ru
+  tags:
+    - linux-docker-executor
+  only:
+    - master
+    - beta
+  script:
+    - scripts/override-hosts.sh
+    - scripts/version-waiter.sh
+    - scripts/maven-libraries-download.sh
+    - scripts/maven-testng-start.sh
+    - scripts/build-allure-report.sh
+
+kz-msite-test:
+  stage: selenium-msite-test
+  resource_group: kz-msite-test
+  variables:
+    ENV_LOCALE: "kz"
+    ENV_URL: https://kz.wildberries.ru
+  tags:
+    - linux-docker-executor
+  only:
+    - master
+    - beta
+  script:
+    - scripts/override-hosts.sh
+    - scripts/version-waiter.sh
+    - scripts/maven-libraries-download.sh
+    - scripts/maven-testng-start.sh
+    - scripts/build-allure-report.sh
+
+pages:
+  stage: pages
+  resource_group: pages
+  extends:
+    - ru-msite-test
+    - by-msite-test
+    - am-msite-test
+    - kz-msite-test
+    - kg-msite-test
+  tags:
+    - linux-docker-executor
+  only:
+    - master
+    - beta
+  script:
+    - scripts/build-pages.sh
+  artifacts:
+    paths:
+      - public

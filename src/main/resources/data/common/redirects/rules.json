@@ -1,0 +1,374 @@
+{
+  "rules": {
+    "domain": "wildberries",
+    "locale": "",
+    "redirects": [
+      {
+        "auth": false,
+        "desktopUrl": "https://security.{domain}.{locale}/login",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/details",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/details",
+        "mobilePageClass": "ru.wildberries.pages.account.AccountDetailsPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/details",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/mysubscribes",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/details/mysubscribes",
+        "mobilePageClass": "ru.wildberries.pages.account.SubscribesPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/mysubscribes",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/mydiscount",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/mydiscount",
+        "mobilePageClass": "ru.wildberries.pages.account.DiscountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/mydiscount",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/mywallet",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/mywallet",
+        "mobilePageClass": "ru.wildberries.pages.account.WalletPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/mywallet",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/newsfeed/events",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/newsfeed/events",
+        "mobilePageClass": "ru.wildberries.pages.account.NotificationsPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/newsfeed/events",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/newsfeed",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/newsfeed",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.account.UnauthorizedUserAccountPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/comfort",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/comfort",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/mylooks",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/mylooks",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/communications",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/communications",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/communications/archive",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/communications/archive",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/claims",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/claims",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/myorders",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/myorders",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/myrefunds",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/myrefunds",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/refund",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/refund",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/waitinglist",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/waitinglist",
+        "mobilePageClass": "ru.wildberries.pages.waitinglist.WaitingListPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/waitinglist",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/poned",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/poned",
+        "mobilePageClass": "ru.wildberries.pages.poned.PonedPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/poned",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/mysafety",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/sessions",
+        "mobilePageClass": "ru.wildberries.pages.account.SessionsPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/mysafety",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/discussion/feedback",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/discussions",
+        "mobilePageClass": "ru.wildberries.pages.account.DiscussionsPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/discussion/feedback",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/mylooks",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/mylooks",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/myorders",
+        "mobileUrl": "https://www.{domain}.{locale}/lk",
+        "mobilePageClass": "ru.wildberries.pages.account.AuthorizedUserAccountPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/myorders",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/myorders/delivery",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/myorders/delivery",
+        "mobilePageClass": "ru.wildberries.pages.account.DeliveryPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/myorders/delivery",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/historygoods",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/historygoods",
+        "mobilePageClass": "ru.wildberries.pages.account.PurchasesPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/historygoods",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/receipts/get?query",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/mywallet?query",
+        "mobilePageClass": "ru.wildberries.pages.account.WalletPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/receipts/get?query",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://lk.{domain}.{locale}/favoritebrands",
+        "mobileUrl": "https://www.{domain}.{locale}/lk/favoritebrands",
+        "mobilePageClass": "ru.wildberries.pages.account.FavoriteBrandsPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://lk.{domain}.{locale}/favoritebrands",
+        "mobileUrl": "https://www.{domain}.{locale}/security/login",
+        "mobilePageClass": "ru.wildberries.pages.login.EnterPhoneNumberLoginPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://www.{domain}.{locale}/catalog/9605867/detail.aspx",
+        "mobileUrl": "https://www.{domain}.{locale}/catalog/9605867/detail.aspx",
+        "mobilePageClass": "ru.wildberries.pages.catalog.CatalogDetailPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://www.{domain}.{locale}/catalog/9605867/detail.aspx",
+        "mobileUrl": "https://www.{domain}.{locale}/catalog/9605867/detail.aspx",
+        "mobilePageClass": "ru.wildberries.pages.catalog.CatalogDetailPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://www.{domain}.{locale}/presscenter",
+        "mobileUrl": "https://www.{domain}.{locale}",
+        "mobilePageClass": "ru.wildberries.pages.home.HomePage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://www.{domain}.{locale}/presscenter",
+        "mobileUrl": "https://www.{domain}.{locale}",
+        "mobilePageClass": "ru.wildberries.pages.home.HomePage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://www.{domain}.{locale}/catalog/9316843/otzyvy",
+        "mobileUrl": "https://www.{domain}.{locale}/catalog/9316843/detail.aspx/feedback",
+        "mobilePageClass": "ru.wildberries.pages.catalog.CatalogDetailFeedbackPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://www.{domain}.{locale}/catalog/9316744/otzyvy",
+        "mobileUrl": "https://www.{domain}.{locale}/catalog/9316744/detail.aspx/feedback",
+        "mobilePageClass": "ru.wildberries.pages.catalog.CatalogDetailFeedbackPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://www.{domain}.{locale}/catalog/9316843/voprosy",
+        "mobileUrl": "https://www.{domain}.{locale}/catalog/9316843/detail.aspx/questions",
+        "mobilePageClass": "ru.wildberries.pages.catalog.CatalogDetailQuestionsPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://www.{domain}.{locale}/catalog/9316744/voprosy",
+        "mobileUrl": "https://www.{domain}.{locale}/catalog/9316744/detail.aspx/questions",
+        "mobilePageClass": "ru.wildberries.pages.catalog.CatalogDetailQuestionsPage"
+      },
+      {
+        "auth": true,
+        "desktopUrl": "https://www.{domain}.{locale}/promotions",
+        "mobileUrl": "https://www.{domain}.{locale}/promotions",
+        "mobilePageClass": "ru.wildberries.pages.PromotionsPage"
+      },
+      {
+        "auth": false,
+        "desktopUrl": "https://www.{domain}.{locale}/promotions",
+        "mobileUrl": "https://www.{domain}.{locale}/promotions",
+        "mobilePageClass": "ru.wildberries.pages.PromotionsPage"
+      }
+    ]
+  }
+}

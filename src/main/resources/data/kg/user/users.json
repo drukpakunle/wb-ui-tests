@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "countryCode": "996",
+      "phone": "090000001",
+      "smsCode": "3755",
+      "name": null,
+      "surname": null,
+      "middleName": null,
+      "dateOfBirth": null,
+      "gender": "male",
+      "agePeriod": "adult",
+      "mail": null,
+      "subscriptions": {
+        "personalRecommendations": false,
+        "waitingList": false,
+        "sales": false,
+        "sms": false
+      },
+      "figureOptions": {
+        "visibleEveryone": false,
+        "height": null,
+        "weight": null,
+        "shoeSize": null,
+        "footSize": null,
+        "neckGirth": null,
+        "chestGirth": null,
+        "waistGirth": null,
+        "hipGirth": null,
+        "sleeveLength": null,
+        "legInsideLength": null
+      },
+      "avatarUrl": null,
+      "cookies": {
+        "authCookieValue": "1B6EDDB00944AB414C3FE44F488107F1A7CC80DB06B68F6D2F4914805BE399EF5B6DF60B1B853B6A986E96CEFAD06A6033827C75B2781878CBE8F0718C1DA0211D4CC8A5A17101C2C9DC93161224DFDBE113A4B3DDD2368F53756B47EC561628E45680CB820D5A2BBCB70ED994537B1FA8FEF6444F07ED1EB1C4E9E600048B13B1D7CCD9E0C7EC159E572D97620803C206BF352D550D79459CB0D44806058EBF084F7ED942054EDAEB82F5BFC3F9EDC925BDEDF14F76FB44089CDC2C51525A0019412463A33E44B2AE264A762E0BF84BBEFFBAFA7FF5FAD2B6A2B4DE88C1518FD538E1D1732697E7BB30042D593FB32BF514D22123CBF4372B53642DDE8994BC99CA4C3C13D692463277B95E1E3F061081A556171EDDA600781E0C1052F20F309A1C7A13"
+      }
+    }
+  ]
+}
